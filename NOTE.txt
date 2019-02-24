@@ -1,0 +1,11 @@
+
+
+^"#define"             {BEGIN  S_DEFINE;}
+<S_DEFINE>[ \t]*      /* eat the whitespace */
+<S_DEFINE>[^\n]+ {    define();   }
+<S_DEFINE>\n { BEGIN 0;}
+
+^"#undef"             {BEGIN  S_UNDEF;}
+<S_UNDEF>[ \t]*      /* eat the whitespace */
+<S_UNDEF>[a-zA-Z_][a-zA-Z0-9_]*   {    undefine();   }
+<S_UNDEF>\n { BEGIN 0;}

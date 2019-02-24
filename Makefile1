@@ -1,0 +1,14 @@
+all: compile
+
+CPPFLAGS = -Wall -Wno-unused -Wno-deprecated -Wno-write-strings
+LDFLAGS = -lfl
+LIBS = -Wall
+
+tokens.cpp: lex.l
+	flex -o $@ $<
+
+compile: tokens.cpp
+	g++ -o $@ tokens.cpp $(LIBS) $(LDFLAGS)
+
+clean:
+	$(RM) -rf tokens.cpp compile
