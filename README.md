@@ -14,6 +14,6 @@ Run 'make' to get the executable file.
 - a parser conforms to the BNF of C language.
 - supports all C expression precedences.
 - a type system that can parse declarations like: 
-'''int *func[2][3](int *i, int j);
-''', and a expression type checker.
+```int *func[2][3](int *i, int j);
+```, and a expression type checker.
 - TODO: intermediate code generation.
