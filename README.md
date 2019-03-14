@@ -7,11 +7,10 @@ This project requires three cmds(flex, bison, g++) and one dynamic library(libfl
 Run 'make' to get the executable file.
 
 ## Features
-- generates an AST not including expressions.
 - Macros: 
     - #include
     - #define, #undef
-
+- generates ASTs for .c files.
 - C language type system that can parse declarations like: 
 '''int *func[2][3](int a, int b);
 '''
