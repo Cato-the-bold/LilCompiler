@@ -1,9 +1,9 @@
-#LilCompiler
+#LilCompiler#
 
-##Environment
+##Environment##
 This project requires three cmds(flex, bison, g++) and one dynamic library(libfl).
 
-##Installation
+##Installation##
 Run 'make' to get the executable file.
 
 ##Features
