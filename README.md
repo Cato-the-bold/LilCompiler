@@ -15,5 +15,6 @@ Run 'make' to get the executable file.
 - supports all C expression precedences.
 - a type system that can parse declarations like: 
 ```int *func[2][3](int *i, int j);
-```, and a expression type checker.
+```
+, and a expression type checker.
 - TODO: intermediate code generation.
