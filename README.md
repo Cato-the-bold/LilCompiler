@@ -11,6 +11,9 @@ Run 'make' to get the executable file.
     - #include
     - #define, #undef
 - generates ASTs for .c files.
-- C language type system that can parse declarations like: 
-'''int *func[2][3](int a, int b);
-'''TODO:
+- a parser conforms to the BNF of C language.
+- supports all C expression precedences.
+- a type system that can parse declarations like: 
+'''int *func[2][3](int *i, int j);
+''', and a expression type checker.
+- TODO: intermediate code generation.
